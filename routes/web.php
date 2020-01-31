@@ -11,9 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });
 
 $router->get('/books','BookController@index');
 $router->post('/books','BookController@store');
